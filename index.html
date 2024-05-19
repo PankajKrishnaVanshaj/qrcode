@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/generator.css" />
+    <link rel="stylesheet" href="./css/scanner.css" />
+    <title>
+      PK QR Code Generator & Scanner - Create and Scan QR Codes Online
+    </title>
+    <meta
+      name="description"
+      content="Easily create and scan QR codes online with the PK QR Code Generator and Scanner.Generate custom QR codes for URLs, text, Wi-Fi, contacts, and more. Scan QR codes quickly and accurately. Ideal for businesses, events, marketing, and personal use. Free and user-friendly."
+    />
+    <meta
+      name="keywords"
+      content="QR Code Generator,PK QR Code Point, QR Code Scanner, Online QR Code Generator, Create QR Codes, Scan QR Codes, QR Code Maker, Free QR Code Generator, QR Code Reader, Generate QR Codes for URLs, QR Codes for text, QR Codes for Wi-Fi, QR Codes for contacts, PK QR Code"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <button class="nav-gene active">Generator</button>
+        <button class="nav-scan">Scanner</button>
+      </nav>
+
+      <div class="generator">
+        <h1>QR Code Generator</h1>
+        <p>Paste a URL or enter text to create a QR code</p>
+        <div class="generator-form">
+          <input
+            type="text"
+            placeholder="Enter text or URL"
+            aria-label="Enter text or URL to generate QR code"
+          />
+          <button>Generate QR Code</button>
+        </div>
+        <div class="generator-img">
+          <img src="" alt="Generated QR Code" />
+        </div>
+        <div class="generator-btn">
+          <button class="btn-line">Download</button>
+        </div>
+      </div>
+
+      <div class="scanner" style="display: none">
+        <h1>QR Code Scanner</h1>
+        <form class="scanner-form">
+          <input
+            type="file"
+            accept="image/*"
+            hidden
+            aria-label="Upload QR code image"
+          />
+          <img src="./PK-QR-Code.png" alt="QR Code to Scan" />
+          <video></video>
+          <div class="content">
+            <p>Upload a QR code to scan or read</p>
+          </div>
+        </form>
+        <div class="scanner-details">
+          <textarea disabled>jkhjhj</textarea>
+          <div class="btn">
+            <button class="close">Close</button>
+            <button class="copy">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/generator.js"></script>
+    <script src="./js/scanner.js"></script>
+    <script src="./js/instascan.min.js"></script>
+  </body>
+</html>

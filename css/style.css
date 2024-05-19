@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    #ff7e5f,
+    #feb47b,
+    #86e3ce,
+    #d4a5a5,
+    #e8d4a2
+  );
+  background-size: 500% 500%;
+  animation: gradientAnimation 20s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 410px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 7px;
+  padding: 15px 25px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+nav button {
+  width: calc(100% / 2 - 5px);
+  font-size: 1.2rem;
+  text-align: center;
+  height: 45px;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #fff;
+}
+
+nav button.active {
+  border-bottom: 2px solid #0283d8;
+  font-weight: 700;
+  color: #0283d8;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
